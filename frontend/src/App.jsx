@@ -1,33 +1,21 @@
-import { useState } from 'react'
-import {useStrapi} from './hooks/useStrapi'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import ServiceCard from './components/ServiceCard/ServiceCard'
-import TeamCard from './components/TeamCard/TeamCard'
-import PostCard from './components/PostCard/PostCard'
-import Loader  from './components/Loader/Loader'
-import ErrorMessage from './components/ErrorMessage/ErrorMessage'
-import ServicesSection from './components/ServicesSection/ServicesSection'
-import TeamSection  from './components/TeamSection/TeamSection'
-
-
-
+import Home from './components/Home/Home'
+import Services from './components/ServicesSection/ServicesSection'
+import Team from './components/TeamSection/TeamSection'
+import Post from './components/PostCard/Postcard'
 export default function App() {
-  const {data :heroData, loading, error} = useStrapi('hero');
-  return(
-<>
-  <Navbar/>
-  {loading && <Loader/>}
-  {error && <ErrorMessage message={error}/>}
-  {heroData && (
-  <Hero title={heroData.title} subtitle={heroData.subtitle} ctaLabel={heroData.ctaLabel}/>
-  )}
-<ServicesSection />
-<TeamSection />
-</>
-  ) 
-  
-  
-  
-  
+  return (
+    <>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/posts" element={<Post />} />
+      </Routes>
+
+    </>
+  )
 }
