@@ -21,7 +21,7 @@ export default function TeamSection() {
             name={item.name}
             role={item.role}
             bio={item.bio}
-            photoUrl={item.photoUrl}
+            photoUrl={`http://localhost:1337${item.photo.url}`}
           />
         ))}
       </div>
