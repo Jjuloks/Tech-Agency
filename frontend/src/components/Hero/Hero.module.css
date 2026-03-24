@@ -1,0 +1,35 @@
+.hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #4f46e5, #9333ea);
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.cta {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: white;
+  color: #4f46e5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #e0e7ff;
+  transform: translateY(-2px);
+}
