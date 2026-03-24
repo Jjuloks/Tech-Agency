@@ -12,7 +12,7 @@ export default function TeamSection() {
 
   return (
     <section id="team" className={styles.section}>
-      <h2>Nasze Zespół</h2>
+      <h2>Nasz Zespół</h2>
 
       <div className={styles.grid}>
         {data.map(item => (

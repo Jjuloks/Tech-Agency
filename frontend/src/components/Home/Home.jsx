@@ -19,8 +19,9 @@ export default function Home() {
           ctaLabel={heroData.ctaLabel}
         />
       )}
+<div>
 
-      <ServicesSection />
+</div>
     </>
   )
 }
