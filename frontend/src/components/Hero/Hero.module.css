@@ -1,9 +1,12 @@
+.caly {
+    background: radial-gradient(circle at top, #EEF2FF, #F8FAFC); 
+}
+
 .hero {
   max-width: 700px;
   margin: 0 auto;
   padding: 4rem 2rem;
   text-align: center;
-  background: #f0f4ff;
   border-radius: 1rem;
   box-shadow: 0 6px 20px rgba(59, 130, 246, 0.15);
 }

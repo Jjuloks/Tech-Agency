@@ -21,9 +21,6 @@ export default function Home() {
           heroImageUrl={`http://localhost:1337${heroData.heroImage.url}`}
         />
       )}  
-<div>
-
-</div>
     </>
   )
 }
