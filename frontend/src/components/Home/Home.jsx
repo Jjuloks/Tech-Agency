@@ -18,6 +18,7 @@ export default function Home() {
           subtitle={heroData.subtitle}
           ctaLabel={heroData.ctaLabel}
           ctaLabel1={heroData.ctaLabel1}
+          heroImageUrl={`http://localhost:1337${heroData.heroImage.url}`}
         />
       )}  
 <div>
