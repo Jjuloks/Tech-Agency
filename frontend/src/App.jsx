@@ -5,6 +5,7 @@ import Services from './components/ServicesSection/ServicesSection'
 import Team from './components/TeamSection/TeamSection'
 import Post from './components/PostCard/Postcard'
 import Footer from './components/Footer/Footer'
+import Contact from './components/Contact/Contact'
 export default function App() {
   return (
     <>
@@ -15,8 +16,8 @@ export default function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/team" element={<Team />} />
         <Route path="/posts" element={<Post />} />
-      </Routes>
-      
+        <Route path="/contact" element={<Contact />} />
+      </Routes>      
 <Footer />
     </>
   )
