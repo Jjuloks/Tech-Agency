@@ -1,8 +1,44 @@
 import styles from './Contact.module.css';
 import ContactSection from '../ContactSection/ContactSection'
 
-export default function Contact({title,subtitle}){
+export default function Contact({title,subtitle,leftsubtitle, faqsubtitle,ctaLabel,Steps}){
+    const stepsDisplay = Steps?.map((step)=>
+    <div>
+        <span>{step.number}</span>
+        <p>{step.text}</p>
+    </div>
+    )
     return (
+
+        <div className={styles.wrapper}>
+    <div className={styles.left}>
+        <h3>{leftsubtitle}</h3>
+
+        <div className={styles.steps}>
+        {stepsDisplay}
+        </div>
+
+        <h4 className={styles.faqTitle}>{faqsubtitle}</h4>
+
+        <div className={styles.faq}>
+            <div>
+                <p className={styles.question}>Ile kosztuje projekt?</p>
+                <p className={styles.answer}>Każdy projekt wyceniamy indywidualnie.</p>
+            </div>
+
+            <div>
+                <p className={styles.question}>Jak szybko odpowiadacie?</p>
+                <p className={styles.answer}>Zwykle w ciągu 24h.</p>
+            </div>
+
+            <div>
+                <p className={styles.question}>Czy podpisujecie NDA?</p>
+                <p className={styles.answer}>Tak, bez problemu.</p>
+            </div>
+        </div>
+    </div> 
+
+ <div className={styles.right}>
         <div className={styles.div}> 
             <h3 className={styles.title}>{title}</h3>
             <p className={styles.subtitle}>{subtitle}</p>
@@ -47,10 +83,11 @@ export default function Contact({title,subtitle}){
                 />
                 </div>
  <button type="submit" className={styles.button}>
-                    Umów konsultację
+                   {ctaLabel}
                 </button>
             </form>
-
+</div>
+        </div>
         </div>
     )
 }

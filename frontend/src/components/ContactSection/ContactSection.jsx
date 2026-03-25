@@ -16,6 +16,10 @@ export default function ContactSection() {
             <Contact
               title={contactData.title}
               subtitle = {contactData.subtitle}
+              leftsubtitle={contactData.leftsubtitle}
+              faqsubtitle={contactData.faqsubtitle}
+              ctaLabel={contactData.ctaLabel}
+              Steps={contactData.Steps}
             />
           )}  
 
