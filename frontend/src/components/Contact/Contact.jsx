@@ -1,15 +1,23 @@
 import styles from './Contact.module.css';
 import ContactSection from '../ContactSection/ContactSection'
 
-export default function Contact({title,subtitle,leftsubtitle, faqsubtitle,ctaLabel,Steps}){
+export default function Contact({title,subtitle,leftsubtitle, faqsubtitle,ctaLabel,Steps,wholefaqs}){
     const stepsDisplay = Steps?.map((step)=>
     <div>
         <span>{step.number}</span>
         <p>{step.text}</p>
     </div>
-    )
-    return (
+    );
 
+    const wholefaqDisplay = wholefaqs?.map((faq)=>
+        <div>
+            <p className={styles.question}>{faq.question}</p>
+            <p className={styles.answers}>{faq.answer}</p>
+        </div>
+    )
+
+
+    return (
         <div className={styles.wrapper}>
     <div className={styles.left}>
         <h3>{leftsubtitle}</h3>
@@ -21,20 +29,7 @@ export default function Contact({title,subtitle,leftsubtitle, faqsubtitle,ctaLab
         <h4 className={styles.faqTitle}>{faqsubtitle}</h4>
 
         <div className={styles.faq}>
-            <div>
-                <p className={styles.question}>Ile kosztuje projekt?</p>
-                <p className={styles.answer}>Każdy projekt wyceniamy indywidualnie.</p>
-            </div>
-
-            <div>
-                <p className={styles.question}>Jak szybko odpowiadacie?</p>
-                <p className={styles.answer}>Zwykle w ciągu 24h.</p>
-            </div>
-
-            <div>
-                <p className={styles.question}>Czy podpisujecie NDA?</p>
-                <p className={styles.answer}>Tak, bez problemu.</p>
-            </div>
+           {wholefaqDisplay}
         </div>
     </div> 
 

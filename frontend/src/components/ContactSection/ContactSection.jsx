@@ -20,6 +20,7 @@ export default function ContactSection() {
               faqsubtitle={contactData.faqsubtitle}
               ctaLabel={contactData.ctaLabel}
               Steps={contactData.Steps}
+              wholefaqs={contactData.wholefaqs}
             />
           )}  
 
