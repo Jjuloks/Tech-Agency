@@ -15,6 +15,7 @@ export default function ContactSection() {
           {contactData && (
             <Contact
               title={contactData.title}
+              subtitle = {contactData.subtitle}
             />
           )}  
 
