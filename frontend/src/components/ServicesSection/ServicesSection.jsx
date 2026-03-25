@@ -15,7 +15,10 @@ export default function ServicesSection (){
 
     return (
         <section id="services" className={styles.section}>
-            <h2>Nasze usługi</h2>
+            <div className={styles.header}>
+                <h2>Innowacyjne rozwiazania dla twojego biznesu</h2>
+                <p>Tworzymy nowoczesne systemy, ktore pomaga firmom osiagnac wiekszy procent sprzedazy dzieki zachecajacej stronie.</p>
+            </div>
             <div className={styles.grid}>
                 {data.map(item=>
                     (
