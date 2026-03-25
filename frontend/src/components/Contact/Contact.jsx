@@ -1,11 +1,11 @@
-import styles from './Contact.module.css'
+import styles from './Contact.module.css';
+import ContactSection from '../ContactSection/ContactSection'
 
-const Footer = () => {
-  return (
-    <div>
-        <h1>Kontakt</h1>
-    </div>
-  )
+export default function Contact({title}){
+    return (
+        <div className={styles.div}> 
+            <h3 className={styles.title}>{title}</h3>
+
+        </div>
+    )
 }
-
-export default Footer

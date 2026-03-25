@@ -5,7 +5,7 @@ import Services from './components/ServicesSection/ServicesSection'
 import Team from './components/TeamSection/TeamSection'
 import Post from './components/PostCard/Postcard'
 import Footer from './components/Footer/Footer'
-import Contact from './components/Contact/Contact'
+import Contact from './components/ContactSection/ContactSection'
 export default function App() {
   return (
     <>

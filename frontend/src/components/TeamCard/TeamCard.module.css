@@ -1,3 +1,6 @@
+.div{
+    background: radial-gradient(circle at top, #EEF2FF, #F8FAFC); 
+}
 .card {
     background-color: #fff;
     border-radius: 0.5rem;
@@ -11,6 +14,7 @@
     min-width: 250px;
     width: 100%;
     box-sizing: border-box;
+    height: 400px;
     
 }
 .card:hover {
