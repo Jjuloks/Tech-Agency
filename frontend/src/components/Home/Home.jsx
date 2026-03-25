@@ -17,8 +17,9 @@ export default function Home() {
           title={heroData.title}
           subtitle={heroData.subtitle}
           ctaLabel={heroData.ctaLabel}
+          ctaLabel1={heroData.ctaLabel1}
         />
-      )}
+      )}  
 <div>
 
 </div>
