@@ -22,7 +22,7 @@ export default function ServicesSection (){
             <div className={styles.grid}>
                 {data.map(item=>
                     (
-                    <ServiceCard key={item.id} icon={item.icon} title={item.title} description={item.description} imageServiceUrl={`http://localhost:1337${item.imageService.url}`}/>
+                    <ServiceCard key={item.id} icon={item.icon} title={item.title} description={item.description} imageServiceUrl={`http://localhost:1337${item.imageService.url}`} startingPrice={item.startingPrice}/>
                     )
                 )}
             </div>

@@ -1,20 +1,71 @@
 .card {
-    background: rgba(255,255,255,0.8);
-    backdrop-filter: blur(10px);
-
-    border-radius: 1.2rem;
-    padding: 2rem;
-
-    border: 1px solid rgba(226,232,240,0.6);
-
-    transition: all 0.3s ease;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
 }
-
 .card:hover {
     transform: translateY(-8px) scale(1.02);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.08);
-    border-color: #6366F1;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
 .imageService {
-  max-width: 200px;
+    width: 100%;
+    max-width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.title {
+    font-size: 1.25rem; 
+    font-weight: 700;
+    color: #0F172A;
+    margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.desc {
+    font-size: 0.95rem;
+    color: #64748B;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    .card {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.6rem 1.4rem;
+    background: linear-gradient(135deg, #3B82F6, #6366F1);
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(59,130,246,0.3);
+}
+
+.btn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(59,130,246,0.4);
+}
+
+.startingPrice {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #10B981; 
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
