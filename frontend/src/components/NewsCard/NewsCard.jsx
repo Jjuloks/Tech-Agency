@@ -1,6 +1,6 @@
 import styles from "./NewsCard.module.css";
 
-export default function NewsCard({ title, content, imageUrl, slug }) {
+export default function NewsCard({ title, content,imageUrl, slug }) {
   return (
     <div className={styles.div}>
       <article className={styles.card}>

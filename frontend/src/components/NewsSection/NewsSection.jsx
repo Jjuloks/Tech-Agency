@@ -1,5 +1,5 @@
 import { useStrapi } from "../../hooks/useStrapi";
-import NewsCard from "../NewsCard/NewsCard";
+import NewsCard from "../NewsCard/NewsCard"
 import Loader from "../Loader/Loader";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
 import styles from "./NewsSection.module.css";
